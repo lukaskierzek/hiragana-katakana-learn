@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace HiraganaKatakanaLearn.HelpingFunctions
 {
-    public static class GetSyllabeFromEnum
+    public static class GetSyllableFromEnum
     {
         /// <summary>
         /// Get Hiragana or Katakana syllabe
@@ -15,10 +15,10 @@ namespace HiraganaKatakanaLearn.HelpingFunctions
         /// <typeparam name="T">HiraganaEnum or KatakanaEnum</typeparam>
         /// <param name="syllabe">Hiragana or Katakana syllabe</param>
         /// <returns>Hiragana or Katakana string syllabe</returns>
-        public static string Syllabe<T>(this T syllabe) where T : Enum
+        public static string Syllable<T>(this T syllabe) where T : Enum
         {
             var memberInfo = typeof(T).GetMember(syllabe.ToString());
-            var result = ((SyllabeAttribute)memberInfo[0].GetCustomAttributes(typeof(SyllabeAttribute), false)[0]).Syllabe;
+            var result = ((SyllableAttribute)memberInfo[0].GetCustomAttributes(typeof(SyllableAttribute), false)[0]).Syllable;
             return result;
         }
     }

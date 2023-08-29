@@ -3,168 +3,168 @@
     public enum HiraganaEnum
     {
         #region vowels
-        [Syllabe("あ")]
+        [Syllable("あ")]
         A,
 
-        [Syllabe("い")]
+        [Syllable("い")]
         I,
 
-        [Syllabe("う")]
+        [Syllable("う")]
         U,
 
-        [Syllabe("え")]
+        [Syllable("え")]
         E,
 
-        [Syllabe("お")]
+        [Syllable("お")]
         O,
         #endregion
 
         #region consonant K
-        [Syllabe("か")]
+        [Syllable("か")]
         KA,
 
-        [Syllabe("き")]
+        [Syllable("き")]
         KI,
 
-        [Syllabe("く")]
+        [Syllable("く")]
         KU,
 
-        [Syllabe("け")]
+        [Syllable("け")]
         KE,
 
-        [Syllabe("こ")]
+        [Syllable("こ")]
         KO,
         #endregion
 
         #region consonant S
-        [Syllabe("さ")]
+        [Syllable("さ")]
         SA,
 
-        [Syllabe("し")]
+        [Syllable("し")]
         SHI,
 
-        [Syllabe("す")]
+        [Syllable("す")]
         SU,
 
-        [Syllabe("せ")]
+        [Syllable("せ")]
         SE,
 
-        [Syllabe("そ")]
+        [Syllable("そ")]
         SO,
         #endregion
 
         #region consonant T
-        [Syllabe("た")]
+        [Syllable("た")]
         TA,
 
-        [Syllabe("ち")]
+        [Syllable("ち")]
         CHI,
 
-        [Syllabe("つ")]
+        [Syllable("つ")]
         TSU,
 
-        [Syllabe("て")]
+        [Syllable("て")]
         TE,
 
-        [Syllabe("と")]
+        [Syllable("と")]
         TO,
         #endregion
 
         #region consonant N
-        [Syllabe("な")]
+        [Syllable("な")]
         NA,
 
-        [Syllabe("に")]
+        [Syllable("に")]
         NI,
 
-        [Syllabe("ぬ")]
+        [Syllable("ぬ")]
         NU,
 
-        [Syllabe("ね")]
+        [Syllable("ね")]
         NE,
 
-        [Syllabe("の")]
+        [Syllable("の")]
         NO,
         #endregion
 
         #region consonant H
-        [Syllabe("は")]
+        [Syllable("は")]
         HA,
 
-        [Syllabe("ひ")]
+        [Syllable("ひ")]
         HI,
 
-        [Syllabe("ふ")]
+        [Syllable("ふ")]
         FU,
 
-        [Syllabe("へ")]
+        [Syllable("へ")]
         HE,
 
-        [Syllabe("ほ")]
+        [Syllable("ほ")]
         HO,
         #endregion
 
         #region consonant M
-        [Syllabe("ま")]
+        [Syllable("ま")]
         MA,
 
-        [Syllabe("み")]
+        [Syllable("み")]
         MI,
 
-        [Syllabe("む")]
+        [Syllable("む")]
         MU,
 
-        [Syllabe("め")]
+        [Syllable("め")]
         ME,
 
-        [Syllabe("も")]
+        [Syllable("も")]
         MO,
         #endregion
 
         #region consonant Y
-        [Syllabe("や")]
+        [Syllable("や")]
         YA,
 
-        [Syllabe("ゆ")]
+        [Syllable("ゆ")]
         YU,
 
-        [Syllabe("よ")]
+        [Syllable("よ")]
         YO,
         #endregion
 
         #region consonant R
-        [Syllabe("ら")]
+        [Syllable("ら")]
         RA,
 
-        [Syllabe("り")]
+        [Syllable("り")]
         RI,
 
-        [Syllabe("る")]
+        [Syllable("る")]
         RU,
 
-        [Syllabe("れ")]
+        [Syllable("れ")]
         RE,
 
-        [Syllabe("ろ")]
+        [Syllable("ろ")]
         RO,
         #endregion
 
         #region consonant W
-        [Syllabe("わ")]
+        [Syllable("わ")]
         WA,
 
-        [Syllabe("ゐ")]
+        [Syllable("ゐ")]
         WI,
 
-        [Syllabe("ゑ")]
+        [Syllable("ゑ")]
         WE,
 
-        [Syllabe("を")]
+        [Syllable("を")]
         WO,
         #endregion
 
         #region consonant N
-        [Syllabe("ん")]
+        [Syllable("ん")]
         N,
         #endregion
     }

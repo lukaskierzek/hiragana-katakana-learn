@@ -4,215 +4,215 @@ namespace HiraganaTests
 {
     public class UnitTestHiraganaEnum
     {
-        #region Syllabes Vowels
-        [Theory, MemberData(nameof(HiraganaSyllabeVowels))]
-        public void GetHiraganaSyllabeVowels(string syllabe, string syllabeFromEnum) => Assert.Equal(syllabe, syllabeFromEnum);
+        #region Syllables Vowels
+        [Theory, MemberData(nameof(HiraganaSyllableVowels))]
+        public void GetHiraganaSyllableVowels(string syllable, string syllableFromEnum) => Assert.Equal(syllable, syllableFromEnum);
 
-        public static IEnumerable<object[]> HiraganaSyllabeVowels
+        public static IEnumerable<object[]> HiraganaSyllableVowels
         {
             get
             {
                 return new[]
                 {
-                     new object[] {"あ", HiraganaEnum.A.Syllabe()},
-                     new object[] {"い", HiraganaEnum.I.Syllabe()},
-                     new object[] {"う", HiraganaEnum.U.Syllabe()},
-                     new object[] {"え", HiraganaEnum.E.Syllabe()},
-                     new object[] {"お", HiraganaEnum.O.Syllabe()},
+                     new object[] {"あ", HiraganaEnum.A.Syllable()},
+                     new object[] {"い", HiraganaEnum.I.Syllable()},
+                     new object[] {"う", HiraganaEnum.U.Syllable()},
+                     new object[] {"え", HiraganaEnum.E.Syllable()},
+                     new object[] {"お", HiraganaEnum.O.Syllable()},
                 };
             }
 
         }
         #endregion
 
-        #region Syllabes Constans K
-        [Theory, MemberData(nameof(HiraganaSyllabeConsonantsK))]
-        public void GetHiraganaSyllabeConstansK(string syllabe, string syllabeFromEnum) => Assert.Equal(syllabe, syllabeFromEnum);
+        #region Syllables Constans K
+        [Theory, MemberData(nameof(HiraganaSyllableConsonantsK))]
+        public void GetHiraganaSyllableConstansK(string syllable, string syllableFromEnum) => Assert.Equal(syllable, syllableFromEnum);
 
-        public static IEnumerable<object[]> HiraganaSyllabeConsonantsK
+        public static IEnumerable<object[]> HiraganaSyllableConsonantsK
         {
             get
             {
                 return new[]
                 {
-                    new object[] {"か", HiraganaEnum.KA.Syllabe()},
-                    new object[] {"き", HiraganaEnum.KI.Syllabe()},
-                    new object[] {"く", HiraganaEnum.KU.Syllabe()},
-                    new object[] {"け", HiraganaEnum.KE.Syllabe()},
-                    new object[] {"こ", HiraganaEnum.KO.Syllabe()},
+                    new object[] {"か", HiraganaEnum.KA.Syllable()},
+                    new object[] {"き", HiraganaEnum.KI.Syllable()},
+                    new object[] {"く", HiraganaEnum.KU.Syllable()},
+                    new object[] {"け", HiraganaEnum.KE.Syllable()},
+                    new object[] {"こ", HiraganaEnum.KO.Syllable()},
                 };
             }
         }
         #endregion
 
-        #region Syllabes Constans S
-        [Theory, MemberData(nameof(HiraganaSyllabeConsonantsS))]
-        public void GetHiraganaSyllabeConstansS(string syllabe, string syllabeFromEnum) => Assert.Equal(syllabe, syllabeFromEnum);
+        #region Syllables Constans S
+        [Theory, MemberData(nameof(HiraganaSyllableConsonantsS))]
+        public void GetHiraganaSyllableConstansS(string syllable, string syllableFromEnum) => Assert.Equal(syllable, syllableFromEnum);
 
-        public static IEnumerable<object[]> HiraganaSyllabeConsonantsS
+        public static IEnumerable<object[]> HiraganaSyllableConsonantsS
         {
             get
             {
                 return new[]
                 {
-                    new object[] {"さ", HiraganaEnum.SA.Syllabe()},
-                    new object[] {"し", HiraganaEnum.SHI.Syllabe()},
-                    new object[] {"す", HiraganaEnum.SU.Syllabe()},
-                    new object[] {"せ", HiraganaEnum.SE.Syllabe()},
-                    new object[] {"そ", HiraganaEnum.SO.Syllabe()},
+                    new object[] {"さ", HiraganaEnum.SA.Syllable()},
+                    new object[] {"し", HiraganaEnum.SHI.Syllable()},
+                    new object[] {"す", HiraganaEnum.SU.Syllable()},
+                    new object[] {"せ", HiraganaEnum.SE.Syllable()},
+                    new object[] {"そ", HiraganaEnum.SO.Syllable()},
                 };
             }
         }
         #endregion
 
-        #region Syllabes Constans T
-        [Theory, MemberData(nameof(HiraganaSyllabeConsonantsT))]
-        public void GetHiraganaSyllabeConstansT(string syllabe, string syllabeFromEnum) => Assert.Equal(syllabe, syllabeFromEnum);
+        #region Syllables Constans T
+        [Theory, MemberData(nameof(HiraganaSyllableConsonantsT))]
+        public void GetHiraganaSyllableConstansT(string syllable, string syllableFromEnum) => Assert.Equal(syllable, syllableFromEnum);
 
-        public static IEnumerable<object[]> HiraganaSyllabeConsonantsT
+        public static IEnumerable<object[]> HiraganaSyllableConsonantsT
         {
             get
             {
                 return new[]
                 {
-                    new object[] {"た", HiraganaEnum.TA.Syllabe()},
-                    new object[] {"ち", HiraganaEnum.CHI.Syllabe()},
-                    new object[] {"つ", HiraganaEnum.TSU.Syllabe()},
-                    new object[] {"て", HiraganaEnum.TE.Syllabe()},
-                    new object[] {"と", HiraganaEnum.TO.Syllabe()},
+                    new object[] {"た", HiraganaEnum.TA.Syllable()},
+                    new object[] {"ち", HiraganaEnum.CHI.Syllable()},
+                    new object[] {"つ", HiraganaEnum.TSU.Syllable()},
+                    new object[] {"て", HiraganaEnum.TE.Syllable()},
+                    new object[] {"と", HiraganaEnum.TO.Syllable()},
                 };
             }
         }
         #endregion
 
-        #region Syllabes Constans N
-        [Theory, MemberData(nameof(HiraganaSyllabeConsonantsN))]
-        public void GetHiraganaSyllabeConstansN(string syllabe, string syllabeFromEnum) => Assert.Equal(syllabe, syllabeFromEnum);
+        #region Syllables Constans N
+        [Theory, MemberData(nameof(HiraganaSyllableConsonantsN))]
+        public void GetHiraganaSyllableConstansN(string syllable, string syllableFromEnum) => Assert.Equal(syllable, syllableFromEnum);
 
-        public static IEnumerable<object[]> HiraganaSyllabeConsonantsN
+        public static IEnumerable<object[]> HiraganaSyllableConsonantsN
         {
             get
             {
                 return new[]
                 {
-                    new object[] {"な", HiraganaEnum.NA.Syllabe()},
-                    new object[] {"に", HiraganaEnum.NI.Syllabe()},
-                    new object[] {"ぬ", HiraganaEnum.NU.Syllabe()},
-                    new object[] {"ね", HiraganaEnum.NE.Syllabe()},
-                    new object[] {"の", HiraganaEnum.NO.Syllabe()},
+                    new object[] {"な", HiraganaEnum.NA.Syllable()},
+                    new object[] {"に", HiraganaEnum.NI.Syllable()},
+                    new object[] {"ぬ", HiraganaEnum.NU.Syllable()},
+                    new object[] {"ね", HiraganaEnum.NE.Syllable()},
+                    new object[] {"の", HiraganaEnum.NO.Syllable()},
                 };
             }
         }
         #endregion
 
-        #region Syllabes Constans H
-        [Theory, MemberData(nameof(HiraganaSyllabeConsonantsH))]
-        public void GetHiraganaSyllabeConstansH(string syllabe, string syllabeFromEnum) => Assert.Equal(syllabe, syllabeFromEnum);
+        #region Syllables Constans H
+        [Theory, MemberData(nameof(HiraganaSyllableConsonantsH))]
+        public void GetHiraganaSyllableConstansH(string syllable, string syllableFromEnum) => Assert.Equal(syllable, syllableFromEnum);
 
-        public static IEnumerable<object[]> HiraganaSyllabeConsonantsH
+        public static IEnumerable<object[]> HiraganaSyllableConsonantsH
         {
             get
             {
                 return new[]
                 {
-                    new object[] {"は", HiraganaEnum.HA.Syllabe()},
-                    new object[] {"ひ", HiraganaEnum.HI.Syllabe()},
-                    new object[] {"ふ", HiraganaEnum.FU.Syllabe()},
-                    new object[] {"へ", HiraganaEnum.HE.Syllabe()},
-                    new object[] {"ほ", HiraganaEnum.HO.Syllabe()},
+                    new object[] {"は", HiraganaEnum.HA.Syllable()},
+                    new object[] {"ひ", HiraganaEnum.HI.Syllable()},
+                    new object[] {"ふ", HiraganaEnum.FU.Syllable()},
+                    new object[] {"へ", HiraganaEnum.HE.Syllable()},
+                    new object[] {"ほ", HiraganaEnum.HO.Syllable()},
                 };
             }
         }
         #endregion
 
-        #region Syllabes Constans M
-        [Theory, MemberData(nameof(HiraganaSyllabeConsonantsM))]
-        public void GetHiraganaSyllabeConstansM(string syllabe, string syllabeFromEnum) => Assert.Equal(syllabe, syllabeFromEnum);
+        #region Syllables Constans M
+        [Theory, MemberData(nameof(HiraganaSyllableConsonantsM))]
+        public void GetHiraganaSyllableConstansM(string syllable, string syllableFromEnum) => Assert.Equal(syllable, syllableFromEnum);
 
-        public static IEnumerable<object[]> HiraganaSyllabeConsonantsM
+        public static IEnumerable<object[]> HiraganaSyllableConsonantsM
         {
             get
             {
                 return new[]
                 {
-                    new object[] {"ま", HiraganaEnum.MA.Syllabe()},
-                    new object[] {"み", HiraganaEnum.MI.Syllabe()},
-                    new object[] {"む", HiraganaEnum.MU.Syllabe()},
-                    new object[] {"め", HiraganaEnum.ME.Syllabe()},
-                    new object[] {"も", HiraganaEnum.MO.Syllabe()},
+                    new object[] {"ま", HiraganaEnum.MA.Syllable()},
+                    new object[] {"み", HiraganaEnum.MI.Syllable()},
+                    new object[] {"む", HiraganaEnum.MU.Syllable()},
+                    new object[] {"め", HiraganaEnum.ME.Syllable()},
+                    new object[] {"も", HiraganaEnum.MO.Syllable()},
                 };
             }
         }
         #endregion
 
-        #region Syllabes Constans Y
-        [Theory, MemberData(nameof(HiraganaSyllabeConsonantsY))]
-        public void GetHiraganaSyllabeConstansY(string syllabe, string syllabeFromEnum) => Assert.Equal(syllabe, syllabeFromEnum);
+        #region Syllables Constans Y
+        [Theory, MemberData(nameof(HiraganaSyllableConsonantsY))]
+        public void GetHiraganaSyllableConstansY(string syllable, string syllableFromEnum) => Assert.Equal(syllable, syllableFromEnum);
 
-        public static IEnumerable<object[]> HiraganaSyllabeConsonantsY
+        public static IEnumerable<object[]> HiraganaSyllableConsonantsY
         {
             get
             {
                 return new[]
                 {
-                    new object[] {"や", HiraganaEnum.YA.Syllabe()},
-                    new object[] {"ゆ", HiraganaEnum.YU.Syllabe()},
-                    new object[] {"よ", HiraganaEnum.YO.Syllabe()},
+                    new object[] {"や", HiraganaEnum.YA.Syllable()},
+                    new object[] {"ゆ", HiraganaEnum.YU.Syllable()},
+                    new object[] {"よ", HiraganaEnum.YO.Syllable()},
                 };
             }
         }
         #endregion
 
-        #region Syllabes Constans R
-        [Theory, MemberData(nameof(HiraganaSyllabeConsonantsR))]
-        public void GetHiraganaSyllabeConstansR(string syllabe, string syllabeFromEnum) => Assert.Equal(syllabe, syllabeFromEnum);
+        #region Syllables Constans R
+        [Theory, MemberData(nameof(HiraganaSyllableConsonantsR))]
+        public void GetHiraganaSyllableConstansR(string syllable, string syllableFromEnum) => Assert.Equal(syllable, syllableFromEnum);
 
-        public static IEnumerable<object[]> HiraganaSyllabeConsonantsR
+        public static IEnumerable<object[]> HiraganaSyllableConsonantsR
         {
             get
             {
                 return new[]
                 {
-                    new object[] {"ら", HiraganaEnum.RA.Syllabe()},
-                    new object[] {"り", HiraganaEnum.RI.Syllabe()},
-                    new object[] {"る", HiraganaEnum.RU.Syllabe()},
-                    new object[] {"れ", HiraganaEnum.RE.Syllabe()},
-                    new object[] {"ろ", HiraganaEnum.RO.Syllabe()},
+                    new object[] {"ら", HiraganaEnum.RA.Syllable()},
+                    new object[] {"り", HiraganaEnum.RI.Syllable()},
+                    new object[] {"る", HiraganaEnum.RU.Syllable()},
+                    new object[] {"れ", HiraganaEnum.RE.Syllable()},
+                    new object[] {"ろ", HiraganaEnum.RO.Syllable()},
                 };
             }
         }
         #endregion
 
-        #region Syllabes Constans W
-        [Theory, MemberData(nameof(HiraganaSyllabeConsonantsW))]
-        public void GetHiraganaSyllabeConstansW(string syllabe, string syllabeFromEnum) => Assert.Equal(syllabe, syllabeFromEnum);
+        #region Syllables Constans W
+        [Theory, MemberData(nameof(HiraganaSyllableConsonantsW))]
+        public void GetHiraganaSyllableConstansW(string syllable, string syllableFromEnum) => Assert.Equal(syllable, syllableFromEnum);
 
-        public static IEnumerable<object[]> HiraganaSyllabeConsonantsW
+        public static IEnumerable<object[]> HiraganaSyllableConsonantsW
         {
             get
             {
                 return new[]
                 {
-                    new object[] {"わ", HiraganaEnum.WA.Syllabe()},
-                    new object[] {"ゐ", HiraganaEnum.WI.Syllabe()},
-                    new object[] {"ゑ", HiraganaEnum.WE.Syllabe()},
-                    new object[] {"を", HiraganaEnum.WO.Syllabe()},
+                    new object[] {"わ", HiraganaEnum.WA.Syllable()},
+                    new object[] {"ゐ", HiraganaEnum.WI.Syllable()},
+                    new object[] {"ゑ", HiraganaEnum.WE.Syllable()},
+                    new object[] {"を", HiraganaEnum.WO.Syllable()},
                 };
             }
         }
         #endregion
 
-        #region Syllabe Vowel N
-        [Theory, MemberData(nameof(HiraganaSyllabeVowelN))]
-        public void GetHiraganaSyllabeVowelN(string syllabe, string syllabeFromEnum) => Assert.Equal(syllabe, syllabeFromEnum);
+        #region Syllables Vowel N
+        [Theory, MemberData(nameof(HiraganaSyllableVowelN))]
+        public void GetHiraganaSyllableVowelN(string syllable, string syllableFromEnum) => Assert.Equal(syllable, syllableFromEnum);
 
-        public static IEnumerable<object[]> HiraganaSyllabeVowelN
+        public static IEnumerable<object[]> HiraganaSyllableVowelN
         {
             get
             {
                 return new[]
                 {
-                    new object[] {"ん", HiraganaEnum.N.Syllabe()},
+                    new object[] {"ん", HiraganaEnum.N.Syllable()},
                 };
             }
         }

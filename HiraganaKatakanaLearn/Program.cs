@@ -1,4 +1,5 @@
-﻿using HiraganaKatakanaLearn.Hiragana.Enums;
+﻿using HiraganaKatakanaLearn.HelpingFunctions;
+using HiraganaKatakanaLearn.Hiragana.Enums;
 using Microsoft.VisualBasic;
 using System.Text;
 
@@ -8,7 +9,8 @@ namespace HiraganaKatakanaLearn
     {
         static void Main(string[] args)
         {
-            Console.WriteLine();
+            ConsoleSettings.EncodingDefault();
+            Console.WriteLine("あいおあひょ綿左飛");
         }
     }
 }
