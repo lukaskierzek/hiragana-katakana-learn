@@ -13,6 +13,30 @@ namespace HiraganaTests
         [Theory, MemberData(nameof(HiraganaSyllabeConsonantsS))]
         public void GetHiraganaSyllabeConstansS(string syllabe, string syllabeFromEnum) => Assert.Equal(syllabe, syllabeFromEnum);
 
+        [Theory, MemberData(nameof(HiraganaSyllabeConsonantsT))]
+        public void GetHiraganaSyllabeConstansT(string syllabe, string syllabeFromEnum) => Assert.Equal(syllabe, syllabeFromEnum);
+
+        [Theory, MemberData(nameof(HiraganaSyllabeConsonantsN))]
+        public void GetHiraganaSyllabeConstansN(string syllabe, string syllabeFromEnum) => Assert.Equal(syllabe, syllabeFromEnum);
+
+        [Theory, MemberData(nameof(HiraganaSyllabeConsonantsH))]
+        public void GetHiraganaSyllabeConstansH(string syllabe, string syllabeFromEnum) => Assert.Equal(syllabe, syllabeFromEnum);
+
+        [Theory, MemberData(nameof(HiraganaSyllabeConsonantsM))]
+        public void GetHiraganaSyllabeConstansM(string syllabe, string syllabeFromEnum) => Assert.Equal(syllabe, syllabeFromEnum);
+
+        [Theory, MemberData(nameof(HiraganaSyllabeConsonantsY))]
+        public void GetHiraganaSyllabeConstansY(string syllabe, string syllabeFromEnum) => Assert.Equal(syllabe, syllabeFromEnum);
+
+        [Theory, MemberData(nameof(HiraganaSyllabeConsonantsR))]
+        public void GetHiraganaSyllabeConstansR(string syllabe, string syllabeFromEnum) => Assert.Equal(syllabe, syllabeFromEnum);
+
+        [Theory, MemberData(nameof(HiraganaSyllabeConsonantsW))]
+        public void GetHiraganaSyllabeConstansW(string syllabe, string syllabeFromEnum) => Assert.Equal(syllabe, syllabeFromEnum);
+
+        [Theory, MemberData(nameof(HiraganaSyllabeVowelN))]
+        public void GetHiraganaSyllabeVowelN(string syllabe, string syllabeFromEnum) => Assert.Equal(syllabe, syllabeFromEnum);
+
         public static IEnumerable<object[]> HiraganaSyllabeVowels
         {
             get
@@ -55,6 +79,119 @@ namespace HiraganaTests
                     new object[] {"す", HiraganaEnum.SU.Syllabe()},
                     new object[] {"せ", HiraganaEnum.SE.Syllabe()},
                     new object[] {"そ", HiraganaEnum.SO.Syllabe()},
+                };
+            }
+        }
+
+        public static IEnumerable<object[]> HiraganaSyllabeConsonantsT
+        {
+            get
+            {
+                return new[]
+                {
+                    new object[] {"た", HiraganaEnum.TA.Syllabe()},
+                    new object[] {"ち", HiraganaEnum.CHI.Syllabe()},
+                    new object[] {"つ", HiraganaEnum.TSU.Syllabe()},
+                    new object[] {"て", HiraganaEnum.TE.Syllabe()},
+                    new object[] {"と", HiraganaEnum.TO.Syllabe()},
+                };
+            }
+        }
+
+        public static IEnumerable<object[]> HiraganaSyllabeConsonantsN
+        {
+            get
+            {
+                return new[]
+                {
+                    new object[] {"な", HiraganaEnum.NA.Syllabe()},
+                    new object[] {"に", HiraganaEnum.NI.Syllabe()},
+                    new object[] {"ぬ", HiraganaEnum.NU.Syllabe()},
+                    new object[] {"ね", HiraganaEnum.NE.Syllabe()},
+                    new object[] {"の", HiraganaEnum.NO.Syllabe()},
+                };
+            }
+        }
+
+        public static IEnumerable<object[]> HiraganaSyllabeConsonantsH
+        {
+            get
+            {
+                return new[]
+                {
+                    new object[] {"は", HiraganaEnum.HA.Syllabe()},
+                    new object[] {"ひ", HiraganaEnum.HI.Syllabe()},
+                    new object[] {"ふ", HiraganaEnum.FU.Syllabe()},
+                    new object[] {"へ", HiraganaEnum.HE.Syllabe()},
+                    new object[] {"ほ", HiraganaEnum.HO.Syllabe()},
+                };
+            }
+        }
+
+        public static IEnumerable<object[]> HiraganaSyllabeConsonantsM
+        {
+            get
+            {
+                return new[]
+                {
+                    new object[] {"ま", HiraganaEnum.MA.Syllabe()},
+                    new object[] {"み", HiraganaEnum.MI.Syllabe()},
+                    new object[] {"む", HiraganaEnum.MU.Syllabe()},
+                    new object[] {"め", HiraganaEnum.ME.Syllabe()},
+                    new object[] {"も", HiraganaEnum.MO.Syllabe()},
+                };
+            }
+        }
+
+        public static IEnumerable<object[]> HiraganaSyllabeConsonantsY
+        {
+            get
+            {
+                return new[]
+                {
+                    new object[] {"や", HiraganaEnum.YA.Syllabe()},
+                    new object[] {"ゆ", HiraganaEnum.YU.Syllabe()},
+                    new object[] {"よ", HiraganaEnum.YO.Syllabe()},
+                };
+            }
+        }
+
+        public static IEnumerable<object[]> HiraganaSyllabeConsonantsR
+        {
+            get
+            {
+                return new[]
+                {
+                    new object[] {"ら", HiraganaEnum.RA.Syllabe()},
+                    new object[] {"り", HiraganaEnum.RI.Syllabe()},
+                    new object[] {"る", HiraganaEnum.RU.Syllabe()},
+                    new object[] {"れ", HiraganaEnum.RE.Syllabe()},
+                    new object[] {"ろ", HiraganaEnum.RO.Syllabe()},
+                };
+            }
+        }
+
+        public static IEnumerable<object[]> HiraganaSyllabeConsonantsW
+        {
+            get
+            {
+                return new[]
+                {
+                    new object[] {"わ", HiraganaEnum.WA.Syllabe()},
+                    new object[] {"ゐ", HiraganaEnum.WI.Syllabe()},
+                    new object[] {"ゑ", HiraganaEnum.WE.Syllabe()},
+                    new object[] {"を", HiraganaEnum.WO.Syllabe()},
+                };
+            }
+        }
+
+        public static IEnumerable<object[]> HiraganaSyllabeVowelN
+        {
+            get
+            {
+                return new[]
+                {
+                    new object[] {"ん", HiraganaEnum.N.Syllabe()},
                 };
             }
         }
