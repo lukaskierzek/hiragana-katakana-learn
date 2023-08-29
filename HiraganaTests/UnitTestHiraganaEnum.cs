@@ -4,38 +4,9 @@ namespace HiraganaTests
 {
     public class UnitTestHiraganaEnum
     {
+        #region Syllabes Vowels
         [Theory, MemberData(nameof(HiraganaSyllabeVowels))]
         public void GetHiraganaSyllabeVowels(string syllabe, string syllabeFromEnum) => Assert.Equal(syllabe, syllabeFromEnum);
-
-        [Theory, MemberData(nameof(HiraganaSyllabeConsonantsK))]
-        public void GetHiraganaSyllabeConstansK(string syllabe, string syllabeFromEnum) => Assert.Equal(syllabe, syllabeFromEnum);
-
-        [Theory, MemberData(nameof(HiraganaSyllabeConsonantsS))]
-        public void GetHiraganaSyllabeConstansS(string syllabe, string syllabeFromEnum) => Assert.Equal(syllabe, syllabeFromEnum);
-
-        [Theory, MemberData(nameof(HiraganaSyllabeConsonantsT))]
-        public void GetHiraganaSyllabeConstansT(string syllabe, string syllabeFromEnum) => Assert.Equal(syllabe, syllabeFromEnum);
-
-        [Theory, MemberData(nameof(HiraganaSyllabeConsonantsN))]
-        public void GetHiraganaSyllabeConstansN(string syllabe, string syllabeFromEnum) => Assert.Equal(syllabe, syllabeFromEnum);
-
-        [Theory, MemberData(nameof(HiraganaSyllabeConsonantsH))]
-        public void GetHiraganaSyllabeConstansH(string syllabe, string syllabeFromEnum) => Assert.Equal(syllabe, syllabeFromEnum);
-
-        [Theory, MemberData(nameof(HiraganaSyllabeConsonantsM))]
-        public void GetHiraganaSyllabeConstansM(string syllabe, string syllabeFromEnum) => Assert.Equal(syllabe, syllabeFromEnum);
-
-        [Theory, MemberData(nameof(HiraganaSyllabeConsonantsY))]
-        public void GetHiraganaSyllabeConstansY(string syllabe, string syllabeFromEnum) => Assert.Equal(syllabe, syllabeFromEnum);
-
-        [Theory, MemberData(nameof(HiraganaSyllabeConsonantsR))]
-        public void GetHiraganaSyllabeConstansR(string syllabe, string syllabeFromEnum) => Assert.Equal(syllabe, syllabeFromEnum);
-
-        [Theory, MemberData(nameof(HiraganaSyllabeConsonantsW))]
-        public void GetHiraganaSyllabeConstansW(string syllabe, string syllabeFromEnum) => Assert.Equal(syllabe, syllabeFromEnum);
-
-        [Theory, MemberData(nameof(HiraganaSyllabeVowelN))]
-        public void GetHiraganaSyllabeVowelN(string syllabe, string syllabeFromEnum) => Assert.Equal(syllabe, syllabeFromEnum);
 
         public static IEnumerable<object[]> HiraganaSyllabeVowels
         {
@@ -52,6 +23,11 @@ namespace HiraganaTests
             }
 
         }
+        #endregion
+
+        #region Syllabes Constans K
+        [Theory, MemberData(nameof(HiraganaSyllabeConsonantsK))]
+        public void GetHiraganaSyllabeConstansK(string syllabe, string syllabeFromEnum) => Assert.Equal(syllabe, syllabeFromEnum);
 
         public static IEnumerable<object[]> HiraganaSyllabeConsonantsK
         {
@@ -67,6 +43,11 @@ namespace HiraganaTests
                 };
             }
         }
+        #endregion
+
+        #region Syllabes Constans S
+        [Theory, MemberData(nameof(HiraganaSyllabeConsonantsS))]
+        public void GetHiraganaSyllabeConstansS(string syllabe, string syllabeFromEnum) => Assert.Equal(syllabe, syllabeFromEnum);
 
         public static IEnumerable<object[]> HiraganaSyllabeConsonantsS
         {
@@ -82,6 +63,11 @@ namespace HiraganaTests
                 };
             }
         }
+        #endregion
+
+        #region Syllabes Constans T
+        [Theory, MemberData(nameof(HiraganaSyllabeConsonantsT))]
+        public void GetHiraganaSyllabeConstansT(string syllabe, string syllabeFromEnum) => Assert.Equal(syllabe, syllabeFromEnum);
 
         public static IEnumerable<object[]> HiraganaSyllabeConsonantsT
         {
@@ -97,6 +83,11 @@ namespace HiraganaTests
                 };
             }
         }
+        #endregion
+
+        #region Syllabes Constans N
+        [Theory, MemberData(nameof(HiraganaSyllabeConsonantsN))]
+        public void GetHiraganaSyllabeConstansN(string syllabe, string syllabeFromEnum) => Assert.Equal(syllabe, syllabeFromEnum);
 
         public static IEnumerable<object[]> HiraganaSyllabeConsonantsN
         {
@@ -112,6 +103,11 @@ namespace HiraganaTests
                 };
             }
         }
+        #endregion
+
+        #region Syllabes Constans H
+        [Theory, MemberData(nameof(HiraganaSyllabeConsonantsH))]
+        public void GetHiraganaSyllabeConstansH(string syllabe, string syllabeFromEnum) => Assert.Equal(syllabe, syllabeFromEnum);
 
         public static IEnumerable<object[]> HiraganaSyllabeConsonantsH
         {
@@ -127,6 +123,11 @@ namespace HiraganaTests
                 };
             }
         }
+        #endregion
+
+        #region Syllabes Constans M
+        [Theory, MemberData(nameof(HiraganaSyllabeConsonantsM))]
+        public void GetHiraganaSyllabeConstansM(string syllabe, string syllabeFromEnum) => Assert.Equal(syllabe, syllabeFromEnum);
 
         public static IEnumerable<object[]> HiraganaSyllabeConsonantsM
         {
@@ -142,6 +143,11 @@ namespace HiraganaTests
                 };
             }
         }
+        #endregion
+
+        #region Syllabes Constans Y
+        [Theory, MemberData(nameof(HiraganaSyllabeConsonantsY))]
+        public void GetHiraganaSyllabeConstansY(string syllabe, string syllabeFromEnum) => Assert.Equal(syllabe, syllabeFromEnum);
 
         public static IEnumerable<object[]> HiraganaSyllabeConsonantsY
         {
@@ -155,6 +161,11 @@ namespace HiraganaTests
                 };
             }
         }
+        #endregion
+
+        #region Syllabes Constans R
+        [Theory, MemberData(nameof(HiraganaSyllabeConsonantsR))]
+        public void GetHiraganaSyllabeConstansR(string syllabe, string syllabeFromEnum) => Assert.Equal(syllabe, syllabeFromEnum);
 
         public static IEnumerable<object[]> HiraganaSyllabeConsonantsR
         {
@@ -170,6 +181,11 @@ namespace HiraganaTests
                 };
             }
         }
+        #endregion
+
+        #region Syllabes Constans W
+        [Theory, MemberData(nameof(HiraganaSyllabeConsonantsW))]
+        public void GetHiraganaSyllabeConstansW(string syllabe, string syllabeFromEnum) => Assert.Equal(syllabe, syllabeFromEnum);
 
         public static IEnumerable<object[]> HiraganaSyllabeConsonantsW
         {
@@ -184,6 +200,11 @@ namespace HiraganaTests
                 };
             }
         }
+        #endregion
+
+        #region Syllabe Vowel N
+        [Theory, MemberData(nameof(HiraganaSyllabeVowelN))]
+        public void GetHiraganaSyllabeVowelN(string syllabe, string syllabeFromEnum) => Assert.Equal(syllabe, syllabeFromEnum);
 
         public static IEnumerable<object[]> HiraganaSyllabeVowelN
         {
@@ -195,5 +216,6 @@ namespace HiraganaTests
                 };
             }
         }
+        #endregion
     }
 }
