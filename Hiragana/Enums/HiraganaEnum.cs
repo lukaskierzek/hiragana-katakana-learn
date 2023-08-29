@@ -1,14 +1,8 @@
-﻿using HiraganaKatakanaLearn.HelpingFunctions.Interfaces;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace HiraganaKatakanaLearn.Hiragana.Enums
+﻿namespace HiraganaKatakanaLearn.Hiragana.Enums
 {
     public enum HiraganaEnum
     {
+        #region vowels
         [Syllabe("あ")]
         A,
 
@@ -23,7 +17,9 @@ namespace HiraganaKatakanaLearn.Hiragana.Enums
 
         [Syllabe("お")]
         O,
+        #endregion
 
+        #region consonant K
         [Syllabe("か")]
         KA,
 
@@ -38,5 +34,6 @@ namespace HiraganaKatakanaLearn.Hiragana.Enums
 
         [Syllabe("こ")]
         KO,
+        #endregion
     }
 }
