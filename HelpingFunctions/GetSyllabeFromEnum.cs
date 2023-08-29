@@ -7,14 +7,11 @@ using System.Threading.Tasks;
 
 namespace HiraganaKatakanaLearn.HelpingFunctions
 {
-    public class GetSyllabe
+    public static class GetSyllabeFromEnum
     {
-        public static string GetKatakanaSyllabe(Enum hiraganaSyllabe)
+        public static string Syllabe<T>(this T syllabe) where T : Enum
         {
-            if (hiraganaSyllabe.GetType() != typeof(HiraganaEnum))
-                throw new Exception("Wrong enum! Only Hiragana");
-
-            var memberInfo = typeof(HiraganaEnum).GetMember(hiraganaSyllabe.ToString());
+            var memberInfo = typeof(T).GetMember(syllabe.ToString());
             var result = ((SyllabeAttribute)memberInfo[0].GetCustomAttributes(typeof(SyllabeAttribute), false)[0]).Syllabe;
             return result;
         }

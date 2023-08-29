@@ -8,8 +8,7 @@ namespace HiraganaKatakanaLearn
     {
         static void Main(string[] args)
         {
-            Console.WriteLine(HelpingFunctions.GetSyllabe.GetKatakanaSyllabe(HiraganaEnum.O));
-
+            Console.WriteLine();
         }
 
     }

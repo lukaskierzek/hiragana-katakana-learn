@@ -8,6 +8,6 @@ namespace HiraganaKatakanaLearn.HelpingFunctions.Interfaces
 {
     public interface IHiragana
     {
-        public static string GetKatakanaSyllabe();
+
     }
 }

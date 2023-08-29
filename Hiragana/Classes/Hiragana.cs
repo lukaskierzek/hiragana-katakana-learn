@@ -7,8 +7,8 @@ using System.Threading.Tasks;
 
 namespace HiraganaKatakanaLearn.Hiragana.Classes
 {
-    public class Hiragana
+    public static class Hiragana
     {
-
+        
     }
 }
