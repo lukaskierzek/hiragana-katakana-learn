@@ -23,5 +23,15 @@ namespace HiraganaKatakanaLearn.Hiragana.Enums
 
         [Syllabe("お")]
         O,
+
+        KA,
+
+        KI,
+
+        KU,
+
+        KE,
+
+        KO,
     }
 }
