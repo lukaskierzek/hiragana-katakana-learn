@@ -35,5 +35,22 @@
         [Syllabe("こ")]
         KO,
         #endregion
+
+        #region consonant S
+        [Syllabe("さ")]
+        SA,
+
+        [Syllabe("し")]
+        SHI,
+
+        [Syllabe("す")]
+        SU,
+
+        [Syllabe("せ")]
+        SE,
+
+        [Syllabe("そ")]
+        SO,
+        #endregion
     }
 }
