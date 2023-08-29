@@ -24,14 +24,19 @@ namespace HiraganaKatakanaLearn.Hiragana.Enums
         [Syllabe("お")]
         O,
 
+        [Syllabe("か")]
         KA,
 
+        [Syllabe("き")]
         KI,
 
+        [Syllabe("く")]
         KU,
 
+        [Syllabe("け")]
         KE,
 
+        [Syllabe("こ")]
         KO,
     }
 }
