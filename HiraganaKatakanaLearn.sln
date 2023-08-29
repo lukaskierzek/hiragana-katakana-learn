@@ -5,6 +5,8 @@ VisualStudioVersion = 17.7.34018.315
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HiraganaKatakanaLearn", "HiraganaKatakanaLearn.csproj", "{32714F6D-ABFD-490F-9529-22F3ACCFF7D0}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HiraganaTests", "..\HiraganaTests\HiraganaTests.csproj", "{A18CA555-6A54-4E89-BC76-BEC588BA0AF3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{32714F6D-ABFD-490F-9529-22F3ACCFF7D0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{32714F6D-ABFD-490F-9529-22F3ACCFF7D0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{32714F6D-ABFD-490F-9529-22F3ACCFF7D0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A18CA555-6A54-4E89-BC76-BEC588BA0AF3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A18CA555-6A54-4E89-BC76-BEC588BA0AF3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A18CA555-6A54-4E89-BC76-BEC588BA0AF3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A18CA555-6A54-4E89-BC76-BEC588BA0AF3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -1,10 +1,16 @@
-﻿namespace HiraganaKatakanaLearn
+﻿using HiraganaKatakanaLearn.Hiragana.Enums;
+using Microsoft.VisualBasic;
+using System.Text;
+
+namespace HiraganaKatakanaLearn
 {
-    internal class Program
+    public class Program
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+            Console.WriteLine(HelpingFunctions.GetSyllabe.GetKatakanaSyllabe(HiraganaEnum.O));
+
         }
+
     }
 }
