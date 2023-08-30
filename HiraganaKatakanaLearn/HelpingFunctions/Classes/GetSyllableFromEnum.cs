@@ -1,11 +1,6 @@
 ﻿using HiraganaKatakanaLearn.Hiragana.Enums;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace HiraganaKatakanaLearn.HelpingFunctions
+namespace HiraganaKatakanaLearn.HelpingFunctions.Classes
 {
     public static class GetSyllableFromEnum
     {
@@ -18,7 +13,8 @@ namespace HiraganaKatakanaLearn.HelpingFunctions
         public static string Syllable<T>(this T syllabe) where T : Enum
         {
             var memberInfo = typeof(T).GetMember(syllabe.ToString());
-            var result = ((SyllableAttribute)memberInfo[0].GetCustomAttributes(typeof(SyllableAttribute), false)[0]).Syllable;
+            var attribute = (SyllableAttribute)memberInfo[0].GetCustomAttributes(typeof(SyllableAttribute), false)[0];
+            var result = attribute.Syllable;
             return result;
         }
     }

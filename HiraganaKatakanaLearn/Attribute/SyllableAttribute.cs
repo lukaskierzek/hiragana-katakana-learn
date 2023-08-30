@@ -1,6 +1,4 @@
-﻿using System.Net.Mail;
-
-namespace HiraganaKatakanaLearn.Hiragana.Enums
+﻿namespace HiraganaKatakanaLearn.Hiragana.Enums
 {
     [AttributeUsage(AttributeTargets.All, Inherited = false, AllowMultiple = true)]
     public class SyllableAttribute : Attribute

@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.7.34018.315
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HiraganaKatakanaLearn", "HiraganaKatakanaLearn.csproj", "{32714F6D-ABFD-490F-9529-22F3ACCFF7D0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HiraganaKatakanaLearn", "HiraganaKatakanaLearn.csproj", "{32714F6D-ABFD-490F-9529-22F3ACCFF7D0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HiraganaTests", "..\HiraganaTests\HiraganaTests.csproj", "{A18CA555-6A54-4E89-BC76-BEC588BA0AF3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HiraganaKatakanaLearnTests", "..\HiraganaTests\HiraganaKatakanaLearnTests.csproj", "{A18CA555-6A54-4E89-BC76-BEC588BA0AF3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

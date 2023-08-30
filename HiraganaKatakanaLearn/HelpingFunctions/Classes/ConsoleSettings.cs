@@ -1,12 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
+﻿using HiraganaKatakanaLearn.HelpingFunctions.Interfaces;
 using System.Text;
-using System.Threading.Tasks;
 
-namespace HiraganaKatakanaLearn.HelpingFunctions
+namespace HiraganaKatakanaLearn.HelpingFunctions.Classes
 {
-    public static class ConsoleSettings
+    public class ConsoleSettings : IConsoleSettings
     {
         /// <summary>
         /// For a proper display of Japanesse syllables

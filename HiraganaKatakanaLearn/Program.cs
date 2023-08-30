@@ -1,7 +1,4 @@
-﻿using HiraganaKatakanaLearn.HelpingFunctions;
-using HiraganaKatakanaLearn.Hiragana.Enums;
-using Microsoft.VisualBasic;
-using System.Text;
+﻿using HiraganaKatakanaLearn.HelpingFunctions.Classes;
 
 namespace HiraganaKatakanaLearn
 {
@@ -9,8 +6,30 @@ namespace HiraganaKatakanaLearn
     {
         static void Main(string[] args)
         {
+            string notice;
             ConsoleSettings.EncodingDefault();
-            Console.WriteLine("あいおあひょ綿左飛");
+            while (true)
+            {
+                App.ShowMenu();
+                switch (App.ReadOption())
+                {
+                    case "1":
+                        //Hiragana.Classes.Hiragana.LearnHiragana();
+                        notice = "Not implemented!";
+                        App.ShowNoticeMessage(notice);
+                        break;
+                    case "2":
+                        notice = "Not implemented!";
+                        App.ShowNoticeMessage(notice);
+                        break;
+                    case "3":
+                        return;
+                    default:
+                        notice = "Wrong option!";
+                        App.ShowNoticeMessage(notice);
+                        break;
+                }
+            }
         }
     }
 }
