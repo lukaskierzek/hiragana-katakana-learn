@@ -8,9 +8,6 @@ namespace HiraganaKatakanaLearn.HelpingFunctions.Classes
         /// <summary>
         /// For a proper display of Japanesse syllables
         /// </summary>
-        public static void EncodingDefault()
-        {
-            Console.OutputEncoding = Encoding.Default;
-        }
+        public static void EncodingDefault() => Console.OutputEncoding = Encoding.Default;
     }
 }

@@ -3,5 +3,6 @@
     public interface IHiragana
     {
         static abstract void LearnHiragana();
+        static abstract List<string> HiraganaList();
     }
 }
