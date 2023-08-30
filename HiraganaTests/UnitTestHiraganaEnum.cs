@@ -1,7 +1,7 @@
 ﻿using HiraganaKatakanaLearn.HelpingFunctions.Classes;
 using HiraganaKatakanaLearn.Hiragana.Enums;
 
-namespace HiraganaKatakanaLearnTests
+namespace HiraganaTests
 {
     public class UnitTestHiraganaEnum
     {
