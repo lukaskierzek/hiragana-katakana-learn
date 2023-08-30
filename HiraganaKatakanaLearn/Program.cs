@@ -15,6 +15,7 @@ namespace HiraganaKatakanaLearn
                 switch (App.ReadOption())
                 {
                     case "1":
+                        Console.Clear();
                         Hiragana.Classes.Hiragana.LearnHiragana();
                         break;
                     case "2":

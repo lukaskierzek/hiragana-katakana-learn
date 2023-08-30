@@ -26,19 +26,15 @@ namespace HiraganaKatakanaLearn.Hiragana.Classes
             var syllable = answeredList[index];
 
             var enumHiragana = (HiraganaEnum)Enum.Parse(typeof(HiraganaEnum), syllable, true);
-            Console.WriteLine($"OK: {enumHiragana.Syllable()}");
             while (true)
             {
-                //Console.WriteLine($"==  {syllable}  ==");
-                var iA = 1;
+                Console.WriteLine($"==  {enumHiragana.Syllable()}  ==");
                 foreach (var item in answeredList)
-                {
-                    Console.WriteLine($"[{iA}]  {item}");
-                    iA++;
-                }
+                    Console.WriteLine($"> {item}");
 
-                var option = App.ReadOption().ToUpper();
+
                 Console.Write("Enter answer: ");
+                var option = App.ReadOption().ToUpper();
                 if (option != syllable)
                     App.ShowNoticeMessage("Nope!\nEnter to any key to again!");
                 else
