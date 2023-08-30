@@ -26,6 +26,14 @@ namespace HiraganaKatakanaLearn.HelpingFunctions.Classes
             Console.Clear();
         }
 
+        public static string GetRandomSyllableFromList(List<string> answeredList)
+        {
+            var random = new Random();
+            int index = random.Next(answeredList.Count);
+            var syllable = answeredList[index];
+            return syllable;
+        }
+
         /// <summary>
         /// Return not the same syllables
         /// </summary>
@@ -33,11 +41,12 @@ namespace HiraganaKatakanaLearn.HelpingFunctions.Classes
         /// <returns>Syllable</returns>
         public static string GetSyllableFromSyllableList(ref List<string> syllables)
         {
-            var random = new Random();
-            int index = random.Next(syllables.Count);
-            var syllable = syllables[index];
+            var syllable = GetRandomSyllableFromList(syllables);
             syllables.Remove(syllable);
             return syllable;
         }
+
+
+
     }
 }
