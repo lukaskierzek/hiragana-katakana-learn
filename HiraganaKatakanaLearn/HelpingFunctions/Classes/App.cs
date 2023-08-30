@@ -2,7 +2,7 @@
 
 namespace HiraganaKatakanaLearn.HelpingFunctions.Classes
 {
-    public class App : IMenu, IMessage, IReadOptions
+    public class App : IMenu, IMessage, IReadOptions, IGetSyllableFromSyllableList
     {
         public static string ReadOption()
         {
@@ -21,9 +21,23 @@ namespace HiraganaKatakanaLearn.HelpingFunctions.Classes
 
         public static void ShowNoticeMessage(string notice)
         {
-            Console.WriteLine($"{notice}\nEnter any key to continue");
+            Console.WriteLine(notice);
             Console.ReadLine();
             Console.Clear();
+        }
+
+        /// <summary>
+        /// Return not the same syllables
+        /// </summary>
+        /// <param name="syllables">List of Hiragana or Katakana</param>
+        /// <returns>Syllable</returns>
+        public static string GetSyllableFromSyllableList(ref List<string> syllables)
+        {
+            var random = new Random();
+            int index = random.Next(syllables.Count);
+            var syllable = syllables[index];
+            syllables.Remove(syllable);
+            return syllable;
         }
     }
 }
