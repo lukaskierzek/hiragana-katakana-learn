@@ -17,5 +17,14 @@ namespace HiraganaTests
             var actual = Hiragana.HiraganaList();
             Assert.Equal(expected, actual);
         }
+
+        [Fact]
+        public void TestGetSyllableFromHiraganaEnum()
+        {
+            var expected = HiraganaEnum.KI;
+            var syllable = "KI";
+            var actual = Hiragana.GetSyllableFromHiraganaEnum(syllable!);
+            Assert.Equal(expected, actual);
+        }
     }
 }
