@@ -16,7 +16,7 @@ namespace HiraganaKatakanaLearn.HelpingFunctions.Classes
             Console.WriteLine("[1]  Hiragana");
             Console.WriteLine("[2]  Katakana");
             Console.WriteLine("[3]  Exit");
-            Console.Write("Enter option: ");
+            Console.Write("Enter option number: ");
         }
 
         public static void ShowNoticeMessage(string notice)
