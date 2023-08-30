@@ -1,6 +1,6 @@
 ﻿using HiraganaKatakanaLearn.HelpingFunctions.Classes;
 
-namespace HiraganaKatakanaLearnTests
+namespace HiraganaTests
 {
     public class UnitTestApp
     {
