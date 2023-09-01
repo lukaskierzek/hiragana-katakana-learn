@@ -5,7 +5,7 @@ namespace HiraganaKatakanaLearn
     public class Program
     {
         static void Main(string[] args)
-        {
+         {
             string notice;
             Action<string> NoticeMessage = App.ShowNoticeMessage;
             ConsoleSettings.EncodingDefault();
@@ -19,8 +19,8 @@ namespace HiraganaKatakanaLearn
                         Hiragana.Classes.Hiragana.LearnHiragana();
                         break;
                     case "2":
-                        notice = "Not implemented!\nEnter any key to continue";
-                        NoticeMessage(notice);
+                        Console.Clear();
+                        Katakana.Classes.Katakana.LearnKatakana();
                         break;
                     case "3":
                         Console.WriteLine("行ってきます！");
