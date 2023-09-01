@@ -1,6 +1,5 @@
 ﻿using HiraganaKatakanaLearn.HelpingFunctions.Classes;
 using HiraganaKatakanaLearn.Hiragana.Enums;
-using System.ComponentModel;
 
 namespace HiraganaTests
 {

@@ -7,7 +7,7 @@ namespace HiraganaKatakanaLearn.HelpingFunctions.Classes
         public static string ReadOption()
         {
             var option = Console.ReadLine();
-            return option!; 
+            return option!;
         }
 
         public static void ShowMenu()
@@ -46,7 +46,10 @@ namespace HiraganaKatakanaLearn.HelpingFunctions.Classes
             return syllable;
         }
 
-
-
+        public static void ShowNoticeGoodAnswer()
+        {
+            Console.WriteLine("せいかい！");
+            Console.WriteLine("Again? [Y/N]");
+        }
     }
 }
