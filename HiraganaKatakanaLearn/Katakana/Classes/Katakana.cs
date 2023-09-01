@@ -47,6 +47,7 @@ namespace HiraganaKatakanaLearn.Katakana.Classes
                 {
                     App.ShowNoticeMessage("Nope!\nEnter to any key to again!");
                     Console.Clear();
+                    newQuestion = false;
                 }
                 else if (option == syllable)
                 {
