@@ -6,6 +6,6 @@ namespace HiraganaKatakanaLearn.HelpingFunctions.Interfaces
     {
         static abstract void LearnHiragana();
         static abstract List<string> HiraganaList();
-        static abstract HiraganaEnum GetSyllableFromHiraganaEnum(string syllable);
+        static abstract HiraganaGojuuonEnum GetSyllableFromHiraganaEnum(string syllable);
     }
 }

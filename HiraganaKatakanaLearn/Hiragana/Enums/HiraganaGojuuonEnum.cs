@@ -1,6 +1,6 @@
 ﻿namespace HiraganaKatakanaLearn.Hiragana.Enums
 {
-    public enum HiraganaEnum
+    public enum HiraganaGojuuonEnum
     {
         #region vowels
         [Syllable("あ")]

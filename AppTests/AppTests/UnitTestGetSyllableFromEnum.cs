@@ -9,7 +9,7 @@ namespace HiraganaTests
         public void TestGetValueFromSyllableAttribute()
         {
             var expected = "こ";
-            var actual = GetSyllableFromEnum.Syllable(HiraganaEnum.KO);
+            var actual = GetSyllableFromEnum.Syllable(HiraganaGojuuonEnum.KO);
             Assert.Equal(expected!, actual!);
         }
     }

@@ -9,26 +9,16 @@ namespace HiraganaKatakanaLearn.Hiragana.Classes
     {
         public static List<string> HiraganaList()
         {
-            var hiraganaList = Enum.GetValues(typeof(HiraganaEnum)).Cast<HiraganaEnum>().Select(x => x.ToString()).ToList();
+            var hiraganaList = Enum.GetValues(typeof(HiraganaGojuuonEnum)).Cast<HiraganaGojuuonEnum>().Select(x => x.ToString()).ToList();
             return hiraganaList;
         }
-
-        private static void QuestionHiragana(List<string> answeredList, List<string> hiraganaList, out string syllable, out HiraganaEnum enumHiragana)
-        {
-            for (int i = 1; i <= 4; i++)
-                answeredList.Add(App.GetSyllableFromSyllableList(ref hiraganaList));
-
-            syllable = App.GetRandomSyllableFromList(answeredList);
-            enumHiragana = GetSyllableFromHiraganaEnum(syllable);
-        }
-
         public static void LearnHiragana()
         {
             var newQuestion = false;
             var answeredList = new List<string>();
             var hiraganaList = HiraganaList();
             string syllable;
-            HiraganaEnum enumHiragana;
+            HiraganaGojuuonEnum enumHiragana;
 
             QuestionHiragana(answeredList, hiraganaList, out syllable, out enumHiragana);
 
@@ -55,7 +45,7 @@ namespace HiraganaKatakanaLearn.Hiragana.Classes
                 }
                 else if (option == syllable)
                 {
-                    Console.WriteLine("ごめいとう！");
+                    Console.WriteLine("せいかい！");
                     Console.WriteLine("Again? [Y/N]");
                     var continueOption = App.ReadOption().ToUpper();
                     if (continueOption == "Y")
@@ -71,7 +61,15 @@ namespace HiraganaKatakanaLearn.Hiragana.Classes
             Console.Clear();
         }
 
-        public static HiraganaEnum GetSyllableFromHiraganaEnum(string syllable) => (HiraganaEnum)Enum.Parse(typeof(HiraganaEnum), syllable, true);
+        public static HiraganaGojuuonEnum GetSyllableFromHiraganaEnum(string syllable) => (HiraganaGojuuonEnum)Enum.Parse(typeof(HiraganaGojuuonEnum), syllable, true);
 
+        private static void QuestionHiragana(List<string> answeredList, List<string> hiraganaList, out string syllable, out HiraganaGojuuonEnum enumHiragana)
+        {
+            for (int i = 1; i <= 4; i++)
+                answeredList.Add(App.GetSyllableFromSyllableList(ref hiraganaList));
+
+            syllable = App.GetRandomSyllableFromList(answeredList);
+            enumHiragana = GetSyllableFromHiraganaEnum(syllable);
+        }
     }
 }

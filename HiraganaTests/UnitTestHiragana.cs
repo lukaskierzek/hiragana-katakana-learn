@@ -13,7 +13,7 @@ namespace HiraganaTests
         [Fact]
         public void TestGetHiraganaList()
         {
-            var expected = Enum.GetValues(typeof(HiraganaEnum)).Cast<HiraganaEnum>().Select(x => x.ToString()).ToList();
+            var expected = Enum.GetValues(typeof(HiraganaGojuuonEnum)).Cast<HiraganaGojuuonEnum>().Select(x => x.ToString()).ToList();
             var actual = Hiragana.HiraganaList();
             Assert.Equal(expected, actual);
         }
@@ -21,7 +21,7 @@ namespace HiraganaTests
         [Fact]
         public void TestGetSyllableFromHiraganaEnum()
         {
-            var expected = HiraganaEnum.KI;
+            var expected = HiraganaGojuuonEnum.KI;
             var syllable = "KI";
             var actual = Hiragana.GetSyllableFromHiraganaEnum(syllable!);
             Assert.Equal(expected, actual);
