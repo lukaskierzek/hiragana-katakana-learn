@@ -37,15 +37,12 @@ namespace HiraganaKatakanaLearn.Katakana.Classes
                     QuestionKatakanaGojuuon(answeredList, katakanaGojuuonList, out syllable, out enumKatakanaGojuuon);
                 }
 
-                Console.WriteLine($"==  {enumKatakanaGojuuon.Syllable()}  ==");
-                foreach (var item in answeredList)
-                    Console.WriteLine($"> {item}");
-                Console.Write("Enter answer: ");
+                PrintHeaderWithAnswers(answeredList, enumKatakanaGojuuon);
 
                 var option = App.ReadOption().ToUpper();
                 if (option != syllable)
                 {
-                    App.ShowNoticeMessage("Nope!\nEnter to any key to again!");
+                    App.ShowNoticeMessage(AppConsts.EnterKeyAgain);
                     Console.Clear();
                     newQuestion = false;
                 }
@@ -55,13 +52,13 @@ namespace HiraganaKatakanaLearn.Katakana.Classes
                     while (true)
                     {
                         var continueOption = App.ReadOption().ToUpper();
-                        if (continueOption == "Y")
+                        if (continueOption == AppConsts.AgainYes)
                         {
                             Console.Clear();
                             newQuestion = true;
                             break;
                         }
-                        else if (continueOption == "N")
+                        else if (continueOption == AppConsts.AgainNo)
                         {
                             returnToMenu = true;
                             break;
@@ -71,13 +68,21 @@ namespace HiraganaKatakanaLearn.Katakana.Classes
                 if (returnToMenu)
                     break;
             }
-            App.ShowNoticeMessage("Enter to any key to return to menu");
+            App.ShowNoticeMessage(AppConsts.EnterKeyReturnMenu);
             Console.Clear();
+        }
+
+        private static void PrintHeaderWithAnswers(List<string> answeredList, KatakanaGojuuonEnum enumKatakanaGojuuon)
+        {
+            Console.WriteLine($"==  {enumKatakanaGojuuon.Syllable()}  ==");
+            foreach (var item in answeredList)
+                Console.WriteLine($"> {item}");
+            Console.Write(AppConsts.EnterAnswer);
         }
 
         private static void QuestionKatakanaGojuuon(List<string> answeredList, List<string> katakanaGojuuonList, out string syllable, out KatakanaGojuuonEnum enumKatakanaGojuuon)
         {
-            for (int i = 1; i <= 4; i++)
+            for (int i = 1; i <= AppConsts.MaxNumberAnswers; i++)
                 answeredList.Add(App.GetSyllableFromSyllableList(ref katakanaGojuuonList));
 
             syllable = App.GetRandomSyllableFromList(answeredList);

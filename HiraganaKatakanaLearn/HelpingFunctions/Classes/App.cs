@@ -48,8 +48,8 @@ namespace HiraganaKatakanaLearn.HelpingFunctions.Classes
 
         public static void ShowNoticeGoodAnswer()
         {
-            Console.WriteLine("せいかい！");
-            Console.WriteLine("Again? [Y/N]");
+            Console.WriteLine(AppConsts.JapaneseCorrectAnswer);
+            Console.WriteLine(AppConsts.AgainQuestion);
         }
     }
 }
