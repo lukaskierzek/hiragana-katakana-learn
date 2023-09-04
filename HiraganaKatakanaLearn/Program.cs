@@ -23,10 +23,10 @@ namespace HiraganaKatakanaLearn
                         Katakana.Classes.Katakana.LearnKatakana();
                         break;
                     case "3":
-                        Console.WriteLine("行ってきます！");
+                        Console.WriteLine(AppConsts.JapaneseSeeYouLater);
                         return;
                     default:
-                        notice = "Wrong option!\nEnter any key to continue";
+                        notice = AppConsts.WrongOptions;
                         NoticeMessage(notice);
                         break;
                 }

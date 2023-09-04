@@ -39,15 +39,12 @@ namespace HiraganaKatakanaLearn.Hiragana.Classes
                     QuestionHiraganaGojuuon(answeredList, hiraganaGojuuonList, out syllable, out enumHiraganaGojuuon);
                 }
 
-                Console.WriteLine($"==  {enumHiraganaGojuuon.Syllable()}  ==");
-                foreach (var item in answeredList)
-                    Console.WriteLine($"> {item}");
-                Console.Write("Enter answer: ");
+                PrintHeaderWithAnswers(answeredList, enumHiraganaGojuuon);
 
                 var option = App.ReadOption().ToUpper();
                 if (option != syllable)
                 {
-                    App.ShowNoticeMessage("Nope!\nEnter to any key to again!");
+                    App.ShowNoticeMessage(AppConsts.EnterKeyAgain);
                     Console.Clear();
                     newQuestion = false;
                 }
@@ -57,13 +54,13 @@ namespace HiraganaKatakanaLearn.Hiragana.Classes
                     while (true)
                     {
                         var continueOption = App.ReadOption().ToUpper();
-                        if (continueOption == "Y")
+                        if (continueOption == AppConsts.AgainYes)
                         {
                             Console.Clear();
                             newQuestion = true;
                             break;
                         }
-                        else if (continueOption == "N")
+                        else if (continueOption == AppConsts.AgainNo)
                         {
                             returnToMenu = true;
                             break;
@@ -73,15 +70,23 @@ namespace HiraganaKatakanaLearn.Hiragana.Classes
                 if (returnToMenu)
                     break;
             }
-            App.ShowNoticeMessage("Enter to any key to return to menu");
+            App.ShowNoticeMessage(AppConsts.EnterKeyReturnMenu);
             Console.Clear();
+        }
+
+        private static void PrintHeaderWithAnswers(List<string> answeredList, HiraganaGojuuonEnum enumHiraganaGojuuon)
+        {
+            Console.WriteLine($"==  {enumHiraganaGojuuon.Syllable()}  ==");
+            foreach (var item in answeredList)
+                Console.WriteLine($"> {item}");
+            Console.Write(AppConsts.EnterAnswer);
         }
 
         public static HiraganaGojuuonEnum GetSyllableFromHiraganaGojuuonEnum(string syllable) => (HiraganaGojuuonEnum)Enum.Parse(typeof(HiraganaGojuuonEnum), syllable, true);
 
         private static void QuestionHiraganaGojuuon(List<string> answeredList, List<string> hiraganaGojuuonList, out string syllable, out HiraganaGojuuonEnum enumHiraganaGojuuon)
         {
-            for (int i = 1; i <= 4; i++)
+            for (int i = 1; i <= AppConsts.MaxNumberAnswers; i++)
                 answeredList.Add(App.GetSyllableFromSyllableList(ref hiraganaGojuuonList));
 
             syllable = App.GetRandomSyllableFromList(answeredList);
