@@ -15,5 +15,7 @@ Visual Studio 2022
 The next instruction is the same for Hiragana and Katakana.
 
 If you enter the corrent answer, then show question `Again? [Y/N]`.
+
 If you enter `Y` you get the next syllable. Otherwise, if you enter `N`, you get the information `Enter to any key to return to menu`.
+
 If you enter wrong answer, you get the information `Nope!\nEnter to any key to again!`.
