@@ -29,7 +29,7 @@ namespace HiraganaTests
         [MemberData(nameof(ConstsStringApp))]
         [Trait("AppConstsClass", "Consts string")]
         public void TestAppConstsStringAreEqual(string excepted, string actual) => Assert.Equal(excepted!, actual!);
-        public static IEnumerable<Object[]> ConstsStringApp
+        public static IEnumerable<object[]> ConstsStringApp
         {
             get
             {
@@ -44,6 +44,7 @@ namespace HiraganaTests
                     new object[] { "Wrong option!\nEnter any key to continue", AppConsts.WrongOptions},
                     new object[] { "せいかい！", AppConsts.JapaneseCorrectAnswer},
                     new object[] { "行ってきます！", AppConsts.JapaneseSeeYouLater},
+                    new object[] { "Hiragana Katakana Learn", AppConsts.AppTitle},
                 };
             }
         }
@@ -52,7 +53,7 @@ namespace HiraganaTests
         [MemberData(nameof(ConstsIntApp))]
         [Trait("AppConstsClass", "Consts int")]
         public void TestAppConstsIntAreEqual(int excepted, int actual) => Assert.Equal(excepted!, actual!);
-        public static IEnumerable<Object[]> ConstsIntApp
+        public static IEnumerable<object[]> ConstsIntApp
         {
             get
             {

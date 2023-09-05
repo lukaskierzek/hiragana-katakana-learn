@@ -18,6 +18,7 @@ namespace HiraganaKatakanaLearn.HelpingFunctions.Classes
         public const string WrongOptions = "Wrong option!\nEnter any key to continue";
         public const string JapaneseCorrectAnswer = "せいかい！";
         public const string JapaneseSeeYouLater = "行ってきます！";
+        public const string AppTitle = "Hiragana Katakana Learn";
         #endregion
 
         #region Consts int
