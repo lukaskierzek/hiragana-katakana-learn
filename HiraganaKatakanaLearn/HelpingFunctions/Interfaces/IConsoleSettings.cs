@@ -1,7 +1,9 @@
-﻿namespace HiraganaKatakanaLearn.HelpingFunctions.Interfaces
+﻿using System.Text;
+
+namespace HiraganaKatakanaLearn.HelpingFunctions.Interfaces
 {
     internal interface IConsoleSettings
     {
-        static abstract void EncodingDefault();
+        static abstract void ConsoleSettingsDefault(Encoding encoding, string title);
     }
 }

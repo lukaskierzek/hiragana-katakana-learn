@@ -1,4 +1,5 @@
 ﻿using HiraganaKatakanaLearn.HelpingFunctions.Classes;
+using System.Text;
 
 namespace HiraganaKatakanaLearn
 {
@@ -8,7 +9,8 @@ namespace HiraganaKatakanaLearn
          {
             string notice;
             Action<string> NoticeMessage = App.ShowNoticeMessage;
-            ConsoleSettings.EncodingDefault();
+            var consoleSettings = new ConsoleSettings.Settings(Encoding.Default, AppConsts.AppTitle);
+            ConsoleSettings.ConsoleSettingsDefault(consoleSettings.encoding, consoleSettings.title);
             while (true)
             {
                 App.ShowMenu();
