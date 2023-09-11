@@ -1,4 +1,6 @@
 ﻿using HiraganaKatakanaLearn.HelpingFunctions.Interfaces;
+using HiraganaKatakanaLearn.Hiragana.Enums;
+using HiraganaKatakanaLearn.Katakana.Enums;
 
 namespace HiraganaKatakanaLearn.HelpingFunctions.Classes
 {
@@ -50,6 +52,15 @@ namespace HiraganaKatakanaLearn.HelpingFunctions.Classes
         {
             Console.WriteLine(AppConsts.JapaneseCorrectAnswer);
             Console.WriteLine(AppConsts.AgainQuestion);
+        }
+
+        public static List<string> GetSyllabaryGojuuonList(Type syllabary)
+        {
+            if (typeof(HiraganaGojuuonEnum) == syllabary)
+                return Enum.GetValues(typeof(HiraganaGojuuonEnum)).Cast<HiraganaGojuuonEnum>().Select(x => x.ToString()).ToList();
+            else if (typeof(KatakanaGojuuonEnum) == syllabary)
+                return Enum.GetValues(typeof(KatakanaGojuuonEnum)).Cast<KatakanaGojuuonEnum>().Select(x => x.ToString()).ToList();
+            else return new List<string>();
         }
     }
 }

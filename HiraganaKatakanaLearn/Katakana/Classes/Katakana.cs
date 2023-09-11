@@ -8,7 +8,7 @@ namespace HiraganaKatakanaLearn.Katakana.Classes
     {
         public static KatakanaGojuuonEnum GetSyllableFromKatakanaGojuuonEnum(string syllable) => (KatakanaGojuuonEnum)Enum.Parse(typeof(KatakanaGojuuonEnum), syllable, true);
 
-        public static List<string> KatakanaGojuuonList() => Enum.GetValues(typeof(KatakanaGojuuonEnum)).Cast<KatakanaGojuuonEnum>().Select(x => x.ToString()).ToList();
+        public static List<string> KatakanaGojuuonList() => App.GetSyllabaryGojuuonList(typeof(KatakanaGojuuonEnum));
 
         public static void LearnKatakana()
         {

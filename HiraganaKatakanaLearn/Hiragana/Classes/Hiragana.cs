@@ -7,11 +7,7 @@ namespace HiraganaKatakanaLearn.Hiragana.Classes
 {
     public class Hiragana : IHiragana
     {
-        public static List<string> HiraganaGojuuonList()
-        {
-            var hiraganaGojuuonList = Enum.GetValues(typeof(HiraganaGojuuonEnum)).Cast<HiraganaGojuuonEnum>().Select(x => x.ToString()).ToList();
-            return hiraganaGojuuonList;
-        }
+        public static List<string> HiraganaGojuuonList() => App.GetSyllabaryGojuuonList(typeof(HiraganaGojuuonEnum));
         public static void LearnHiragana()
         {
             var newQuestion = false;
