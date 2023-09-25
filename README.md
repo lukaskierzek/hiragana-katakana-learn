@@ -3,14 +3,18 @@
 A console program to help you learn [Hiragana](https://en.wikipedia.org/wiki/Hiragana "Article about Hiragana") gojuuon and [Hiragana](https://en.wikipedia.org/wiki/Katakana "Article about Katakana") gojuuon.
 
 ## Backend
-C# and .NET 7.0
+C# 11 and .NET 7.0
 
 ## IDE
 Visual Studio 2022
 
 ## Instruction
+
+![menu](Menu.png)
+
 - Enter option `1` to proceed to the Hiragana test.
 - Enter option `2` to proceed to the Katakana test.
+- Enter option `3` to proceed to exit the program.
 
 The next instruction is the same for Hiragana and Katakana.
 
