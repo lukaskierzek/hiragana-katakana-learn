@@ -10,16 +10,27 @@ Visual Studio 2022
 
 ## Instruction
 
-![menu](Menu.png)
+![menu](Images/Menu.png)
 
 - Enter option `1` to proceed to the Hiragana test.
 - Enter option `2` to proceed to the Katakana test.
 - Enter option `3` to proceed to exit the program.
 
-The next instruction is the same for Hiragana and Katakana.
+*The next instruction is the same for Hiragana and Katakana.*
 
-If you enter the corrent answer, then show question `Again? [Y/N]`.
+After entering option `1` or option `2`, a syllable is displayed with sample answers.
 
-If you enter `Y` you get the next syllable. Otherwise, if you enter `N`, you get the information `Enter to any key to return to menu`.
+![katakana_answer](Images/Katakana_ask.png)
 
-If you enter wrong answer, you get the information `Nope!\nEnter to any key to again!`.
+If you enter the correct answer, it will display a message about the good answer and ask you to continue.
+
+![good_answer](Images/Good_answer.png)
+
+- Pressing `Y` or `y` will display new syllable with samlpe answers.
+- Pressing `N` or `n` to proceed to the menu.
+
+Otherwise, an incorrect answer message will be displayed.
+
+![incorrect_answer](Images/Incorrect_answer.png)
+
+Pressing any key to again will redisplay the same syllable with sample answers.
