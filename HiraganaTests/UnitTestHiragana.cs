@@ -1,4 +1,4 @@
-﻿using HiraganaKatakanaLearn.Hiragana.Classes;
+﻿using HiraganaKatakanaLearn.Hiragana.Classes.Hiragana;
 using HiraganaKatakanaLearn.Hiragana.Enums;
 
 namespace HiraganaTests

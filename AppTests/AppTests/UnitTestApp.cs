@@ -1,5 +1,5 @@
 ﻿using HiraganaKatakanaLearn.HelpingFunctions.Classes;
-using HiraganaKatakanaLearn.Hiragana.Classes;
+using HiraganaKatakanaLearn.Hiragana.Classes.Hiragana;
 
 namespace HiraganaTests
 {

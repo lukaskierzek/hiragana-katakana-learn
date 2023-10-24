@@ -18,7 +18,7 @@ namespace HiraganaKatakanaLearn
                 {
                     case "1":
                         Console.Clear();
-                        Hiragana.Classes.Hiragana.LearnHiragana();
+                        Hiragana.Classes.Hiragana.Hiragana.LearnHiragana();
                         break;
                     case "2":
                         Console.Clear();
