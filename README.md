@@ -1,15 +1,19 @@
 # Hiragana Katakana Learn
-## Description
 A console program to help you learn [Hiragana](https://en.wikipedia.org/wiki/Hiragana "Article about Hiragana") gojuuon and [Hiragana](https://en.wikipedia.org/wiki/Katakana "Article about Katakana") gojuuon.
 
-## Backend
-C# 11 and .NET 7.0
+## Table of contents
+* [Technologies Used](#technologies-used)
+* [Instruction](#instruction)
+* [Project Status](#project-status)
+* [Licence](#licence)
 
-## IDE
-Visual Studio 2022
+## Technologies Used
+- C# 11
+- .NET 7
+- xUnit 2
+- Visual Studio 2022
 
 ## Instruction
-
 ![menu](Images/Menu.png)
 
 - Enter option `1` to proceed to the Hiragana test.
@@ -34,3 +38,11 @@ Otherwise, an incorrect answer message will be displayed.
 ![incorrect_answer](Images/Incorrect_answer.png)
 
 Pressing any key to again will redisplay the same syllable with sample answers.
+
+## Project Status
+Completed
+
+## Licence
+> [Full content of the licence](LICENCE).
+
+MIT
